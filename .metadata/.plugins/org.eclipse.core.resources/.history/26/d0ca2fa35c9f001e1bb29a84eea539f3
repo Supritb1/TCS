@@ -1,0 +1,18 @@
+package javaPractive;
+
+public class MultiplicationTableRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MultiplicationTable m = new MultiplicationTable();
+
+		m.print(0);
+		
+		KeyboardShortcuts ky = new KeyboardShortcuts();
+		
+		ky.convertHoursToMunites(10);
+
+	}
+
+}

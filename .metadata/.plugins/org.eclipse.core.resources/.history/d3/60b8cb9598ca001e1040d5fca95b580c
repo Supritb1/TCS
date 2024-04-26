@@ -1,0 +1,16 @@
+package javaPractive;
+
+public class MyChar {
+
+	private char c;
+
+	public MyChar(char c) {
+		this.c = c;
+	}
+
+	public boolean isVowel() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

@@ -1,0 +1,21 @@
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class InterviewQuestions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// 1. Get the count of total links present in the page
+
+		System.setProperty("webdriver.chromedriver", "D:/RahulShetty/Drivers/edgedriver_win64/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package javaPractive;
+
+public class MyChar {
+
+	private char c;
+
+	public MyChar(char c) {
+		this.c = c;
+	}
+
+}

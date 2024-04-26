@@ -1,0 +1,26 @@
+package javaPractive;
+
+public class KeyboardShortcuts {
+
+	public int convertHoursToMunites(int Houus) {
+
+		if (Houus < -1) {
+			return -1;
+		} else {
+			return Houus * 60;
+
+		}
+
+	}
+
+	public boolean validTriangle(int angle1, int angle2, int angle3) {
+
+		if (angle1 <= 0 || angle2 <= 0 || angle3 <= 0) {
+			return false;
+		}
+		int sumOfAngles = angle1 + angle2 + angle3;
+
+		return sumOfAngles == 180;
+
+	}
+}

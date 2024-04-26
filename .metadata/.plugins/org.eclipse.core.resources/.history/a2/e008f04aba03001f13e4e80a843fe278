@@ -1,0 +1,35 @@
+package weebTable;
+
+import java.time.Duration;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class usingJavaStreams1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.chromedriver", "D:/RahulShetty/Drivers/edgedriver_win64/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+		driver.get("https://rahulshettyacademy.com/angularpractice/s");
+		driver.switchTo().newWindow(WindowType.TAB);
+		driver.get("https://rahulshettyacademy.com/");
+		Set<String> ls = driver.getWindowHandles();
+		Iterator<String> itr = ls.iterator();
+		String parentWindow = itr.next();
+		String chindWindow = itr.next();
+		driver.switchTo().window(chindWindow);
+		String name = driver.findElement(By.xpath("//a[@href=\"https://courses.rahulshettyacademy.com/courses\"][1]"))
+				.getText();
+		// driver.findElement(By.cssSelector("https://rahulshettyacademy.com/angularpractice/"));
+
+	}
+
+}

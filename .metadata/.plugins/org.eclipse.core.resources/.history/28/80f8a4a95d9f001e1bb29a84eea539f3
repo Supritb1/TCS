@@ -1,0 +1,15 @@
+package javaPractive;
+
+public class KeyboardShortcuts {
+
+	public int convertHoursToMunites(int Houus) {
+
+		if (Houus < -1) {
+			return -1;
+		} else {
+			return Houus * 60;
+
+		}
+
+	}
+}

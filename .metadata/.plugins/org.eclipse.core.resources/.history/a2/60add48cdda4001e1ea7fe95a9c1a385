@@ -1,0 +1,31 @@
+package com.ballurgi;
+
+public class MotorBike {
+
+	private int speed;
+
+	public int getSpeed() {
+		return speed;
+	}
+
+	public void setSpeed(int speed) {
+		if (speed > 0) {
+			this.speed = speed;
+		}
+		System.out.println(this.speed);
+
+	}
+
+	public void increaseSpeed(int howMuch) {
+
+		this.speed += howMuch;
+
+	}
+
+	public void decreaseeSpeed(int howMuch) {
+
+		this.speed -= howMuch;
+
+	}
+
+}

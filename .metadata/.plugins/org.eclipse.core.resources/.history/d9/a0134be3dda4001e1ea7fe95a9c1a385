@@ -1,0 +1,18 @@
+package com.ballurgi;
+
+public class Runner {
+
+	public static void main(String[] args) {
+
+		MotorBike ducati = new MotorBike();
+		MotorBike honda = new MotorBike();
+
+		ducati.setSpeed(100);
+		System.out.println(ducati.getSpeed());
+		ducati.increaseSpeed-90);
+		System.out.println(ducati.getSpeed());
+		ducati.decreaseeSpeed(1);
+		System.out.println(ducati.getSpeed());
+	}
+
+}
