@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class testResult {
 
 	
-	@Test(groups = {"Functional","Smoke"})
+	@Test(groups = {"Functional"})
 	public void testFunction1() {
 		System.out.println("testFunctional1 and Smoke");
 	}
